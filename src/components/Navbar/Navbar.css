@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navmenu {
+  background-color: black;
+  padding: 1rem 0rem;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ff0000;
+  text-shadow: 7px 7px 8px #ff0000;
+}
+span {
+  color: #009fff;
+  text-shadow: 7px 7px 8px #009fff;
+}
+
+.link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: menu 0.8s forwards ease-in-out; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  margin: 0.8px 1rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+a:hover {
+  color: rgb(221, 214, 214);
+  border-bottom: 1px solid #ff0000;
+}
+
+.active {
+  border-bottom: 1px solid #009fff;
+}
+
+.Icon {
+  display: none;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  color: white;
+}
+
+.fa-times,
+.fa-bars {
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+.fa-times:hover {
+  transform: scale(1.5) rotate(90deg);
+  transition: all 0.7s ease-in-out;
+}
+.fa-bars:hover {
+  transform: scale(1.5) rotate(90deg);
+  transition: all 0.7s ease-in-out;
+}
+
+/* ___________________ */
+@keyframes menu {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* ------- */
+/* @keyframes close {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+} */
+
+/* ---------------------- */
+
+@media screen and (max-width: 800px) {
+  .Icon {
+    display: block;
+  }
+  .close {
+    display: none;
+    animation: close 0.6s forwards ease-out;
+  }
+  .menubar {
+    flex-direction: column;
+  }
+  .link-list {
+    flex-direction: column;
+    animation: menu 0.8s forwards ease-in-out;
+  }
+  li {
+    margin-top: 2rem;
+  }
+
+  a:hover {
+    background-color: #009fff;
+    margin: 0rem auto;
+    text-align: center;
+  }
+}
