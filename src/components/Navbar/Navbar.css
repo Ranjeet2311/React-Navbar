@@ -68,17 +68,17 @@ a:hover {
 }
 .fa-times:hover {
   transform: scale(1.5) rotate(90deg);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 .fa-bars:hover {
   transform: scale(1.5) rotate(90deg);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.4s ease-in;
 }
 
 /* ___________________ */
 @keyframes menu {
   0% {
-    transform: translateX(-700%);
+    transform: translateX(-400%);
   }
   100% {
     transform: translateX(0%);
